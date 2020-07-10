@@ -1,0 +1,4 @@
+test/*.png
+images/*.png
+venv/
+.idea

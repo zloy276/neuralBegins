@@ -7,6 +7,8 @@ from random import randint
 
 
 def gen():
+    if not(os.path.exists('images')):
+        os.mkdir('images')
     income = ["A", "Б", "В", "Г", "Д", "Е", "Ё", "Ж", "З", "И", "Й", "К", "Л", "М", "Н", "О", "П",
               "Р", "С", "Т", "У", "Ф", "Х", "Ц", "Ч", "Ш", "Щ", "Ъ", "Ы", "Ь", "Э", "Ю", "Я"]
     Shrift = ["arial", "calibri", "times", "tahoma", "corbel", "impact", "verdana", "sylfaen"]
@@ -34,6 +36,8 @@ def gen():
 
 
 def test():
+    if not(os.path.exists('test')):
+        os.mkdir('test')
     income = ["A", "Б", "В", "Г", "Д", "Е", "Ё", "Ж", "З", "И", "Й", "К", "Л", "М", "Н", "О", "П",
               "Р", "С", "Т", "У", "Ф", "Х", "Ц", "Ч", "Ш", "Щ", "Ъ", "Ы", "Ь", "Э", "Ю", "Я"]
     Shrift = ["verdana", "sylfaen", "georgia", "simsun"]

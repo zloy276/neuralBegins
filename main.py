@@ -13,6 +13,7 @@ from tkinter import filedialog as fd
 from gen import *
 from lib import *
 
+
 class Window(Frame):
     def __init__(self, master=None):
         Frame.__init__(self, master)
@@ -96,7 +97,7 @@ class Window(Frame):
     def neural_network(self):
         self.T.delete(1.0, END)
         training('images')
-        self.T.insert(1.0,'Нейронная сеть обученна\n')
+        self.T.insert(1.0, 'Нейронная сеть обученна\n')
 
     def tests(self):
         self.T.delete(1.0, END)

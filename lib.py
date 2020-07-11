@@ -12,10 +12,6 @@ from tensorflow import keras
 import os
 
 
-
-
-
-
 def obrez(path):
     img = Image.open(path)
     newArr = np.array(img)
@@ -106,6 +102,7 @@ def neural():
                   loss='sparse_categorical_crossentropy',
                   metrics=['accuracy'])
     return model
+
 
 def training(model):
     train_labels, train_images = mkDict('images')
